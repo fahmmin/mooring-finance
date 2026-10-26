@@ -8,6 +8,8 @@ Mooring is an isolated money market on Mezo. MUSD holders lend into it and earn 
 
 ---
 
+
+Pitch Deck ; https://drive.google.com/file/d/1THrt6esjkmI_Swr-Siv6tElHbyIM_BEq/view?usp=sharing
 ## Screenshots
 
 ![Landing page with a live loan on the loan-to-value ruler](docs/screenshots/1-landing.png)
