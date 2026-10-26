@@ -92,3 +92,57 @@ On Windows, `node build-cache.mjs` builds Synpress's MetaMask cache (Synpress's 
 ## Roadmap
 
 Wave 2 (Nov 2–15): capped mainnet launch with a Pyth price, a market factory with an sMUSD market, a reserve fund with invariant tests, a liquidation keeper with Telegram alerts, and lender rewards through a Mezo Earn gauge. Details in [docs/demo-video.md](docs/demo-video.md#wave-2-milestones-nov-2--nov-15).
+
+---
+
+## AKINDO submission
+
+**Deliverable URL:** [github.com/your-account/mooring-finance] · **Video:** [public YouTube link] · **Live demo:** [hosted app link]
+
+**Build with:** Mezo · Mezo Testnet · MUSD · MEZO · Mezo Pools
+
+**Product category:** Lending · DeFi · Money Market
+
+### What it does
+
+Mooring is an isolated money market on Mezo. MUSD holders lend into it and earn the interest borrowers pay, as mMUSD (ERC-4626) shares that grow over time. MEZO holders post MEZO as collateral and borrow MUSD at up to 50% of its value, without selling. When a loan's debt passes 65% of its collateral, anyone can repay up to half of it and collect the matching MEZO plus an 8% bonus. MEZO is priced from the Mezo Pools MEZO/MUSD pool's time-weighted average.
+
+### The problem it solves
+
+MEZO has one use today: being locked as veMEZO to boost votes. Holders who need dollars have to sell it and give up the upside. On the other side, MUSD has few places to earn: on Oct 25, 2026, DefiLlama showed about $64M in Mezo Earn and $7.4M in Mezo's vaults, but next to nothing in lending markets on Mezo. Mooring turns MEZO into collateral and gives MUSD a lending market.
+
+### Challenges I ran into
+
+- **No live MEZO price on testnet.** Pyth's MEZO/USD feed has never been pushed on Mezo testnet, and its BTC and MUSD feeds were about 90 days old. Hermes now needs an API key to fetch updates. We priced MEZO from the Mezo Pools MEZO/MUSD pool's own TWAP instead, and planned Pyth for mainnet.
+- **A rate model that called itself.** Interest accrual read utilisation, which read total borrows, which accrued interest. The first test run hit infinite recursion; the fix fixes each period's rate at the debt from the last accrual, the way Compound does.
+- **Mezo RPC quirks.** Gas estimates from the wallet were too low (we estimate from the address and add 30%), log queries are capped at 10,000 blocks (we page through them), and a read straight after a transaction can return stale state.
+- **Real-wallet testing on Windows.** Synpress's cache builder only runs on Linux, macOS or WSL, and MetaMask 13 renamed its screens. We wrote a small shim to build the cache on Windows and drive the popups by their button labels.
+- **A race in the amount box.** The app cleared the amount only after reloading balances, which wiped anything typed in those seconds. The end-to-end test caught it.
+
+### Technologies I used
+
+Solidity 0.8.28, OpenZeppelin 5.1 (ERC-4626, SafeERC20, Math), Hardhat, ethers; React 19, Vite, TypeScript, viem; Playwright and Synpress with MetaMask 13; Mezo testnet, MUSD, MEZO and the Mezo Pools MEZO/MUSD pool.
+
+### How we built it
+
+1. Read Mezo's docs and the MUSD contracts, and all 44 Wave 1 entries, to find a gap: MEZO as collateral.
+2. Wrote `MooringMarket` (an ERC-4626 vault plus per-borrower collateral and a borrow index) and `PoolTwapOracle`, test-first, with 6 Hardhat tests covering limits, interest, lender exits, liquidations and pricing.
+3. Deployed to Mezo testnet from a dedicated wallet, seeded 20 MUSD of liquidity, and opened a standing demo loan.
+4. Built the app: Overview, Lend, Borrow (with a loan-to-value ruler), Liquidate and Rules pages, all reading live chain data.
+5. Covered the full user flow with a Synpress test in real MetaMask: connect and switch network, lend and withdraw, post MEZO, borrow, repay in full and take the MEZO back.
+
+### What we learned
+
+- Mezo testnet is fast (about 4 seconds from signing to confirmation), but its RPC needs care: page your log queries, pad gas, and expect a stale read right after a write.
+- An isolated market is the quickest safe start: one collateral and one borrowable asset keep the risk easy to explain.
+- Testing with a real wallet finds bugs that unit tests can't, like the amount box race.
+
+### What's next for Mooring Finance
+
+Wave 2 (Nov 2–15):
+
+1. **Mainnet launch, capped**, with Pyth MEZO/USD bounded by the Mezo Pools average.
+2. **Market factory**, shipping a second market with sMUSD as collateral.
+3. **Safety**: a reserve fund from interest, invariant fuzz tests and timelocked parameters.
+4. **Liquidation keeper** and Telegram alerts for borrowers.
+5. **MEZO rewards for lenders** through a Mezo Earn gauge on an mMUSD/MUSD pool.
