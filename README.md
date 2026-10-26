@@ -8,6 +8,18 @@ Mooring is an isolated money market on Mezo. MUSD holders lend into it and earn 
 
 ---
 
+## Screenshots
+
+![Landing page with a live loan on the loan-to-value ruler](docs/screenshots/1-landing.png)
+
+| Overview | Lend |
+|---|---|
+| ![Overview: market rates and your positions](docs/screenshots/2-overview.png) | ![Lend: deposit MUSD for mMUSD shares](docs/screenshots/3-lend.png) |
+| **Borrow** | **Liquidate** |
+| ![Borrow: a live loan at 35% on the ruler](docs/screenshots/4-borrow.png) | ![Liquidate: every loan, riskiest first](docs/screenshots/5-liquidate.png) |
+
+---
+
 ## Why
 
 MEZO today can be locked for veMEZO votes, and that's about it. Of the 44 Wave 1 Buildathon entries, only one other treats MEZO as collateral. Mooring makes MEZO productive collateral and gives MUSD a lending market to earn in: the first two lines of Track 1's brief ("lending protocols accepting MUSD/MEZO as collateral").
