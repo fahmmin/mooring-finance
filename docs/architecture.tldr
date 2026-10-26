@@ -1,0 +1,1858 @@
+{
+ "tldrawFileFormatVersion": 1,
+ "schema": {
+  "schemaVersion": 2,
+  "sequences": {
+   "com.tldraw.store": 5,
+   "com.tldraw.asset": 1,
+   "com.tldraw.camera": 1,
+   "com.tldraw.document": 2,
+   "com.tldraw.instance": 26,
+   "com.tldraw.instance_page_state": 5,
+   "com.tldraw.page": 1,
+   "com.tldraw.instance_presence": 6,
+   "com.tldraw.pointer": 1,
+   "com.tldraw.shape": 4,
+   "com.tldraw.user": 1,
+   "com.tldraw.asset.image": 6,
+   "com.tldraw.asset.video": 5,
+   "com.tldraw.asset.bookmark": 2,
+   "com.tldraw.shape.arrow": 8,
+   "com.tldraw.shape.bookmark": 2,
+   "com.tldraw.shape.draw": 5,
+   "com.tldraw.shape.embed": 4,
+   "com.tldraw.shape.frame": 1,
+   "com.tldraw.shape.geo": 12,
+   "com.tldraw.shape.group": 0,
+   "com.tldraw.shape.highlight": 4,
+   "com.tldraw.shape.image": 5,
+   "com.tldraw.shape.line": 5,
+   "com.tldraw.shape.note": 13,
+   "com.tldraw.shape.text": 4,
+   "com.tldraw.shape.video": 4,
+   "com.tldraw.binding.arrow": 1
+  }
+ },
+ "records": [
+  {
+   "gridSize": 10,
+   "name": "Mooring Finance",
+   "meta": {},
+   "id": "document:document",
+   "typeName": "document"
+  },
+  {
+   "meta": {},
+   "id": "page:mooring",
+   "name": "Mooring Finance",
+   "index": "a1",
+   "typeName": "page"
+  },
+  {
+   "id": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "typeName": "shape",
+   "type": "frame",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a001",
+   "parentId": "page:mooring",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "w": 1640,
+    "h": 980,
+    "name": "1. How Mooring works",
+    "color": "black"
+   }
+  },
+  {
+   "id": "shape:A2PgnS7E7NYpzZc-XHGXt",
+   "typeName": "shape",
+   "type": "text",
+   "x": 60,
+   "y": 40,
+   "rotation": 0,
+   "index": "a002",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "black",
+    "size": "xl",
+    "font": "sans",
+    "textAlign": "start",
+    "w": 1500,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Mooring Finance: lend MUSD, borrow it against MEZO"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:rHIwxz7z9RC4QmSwoI9FG",
+   "typeName": "shape",
+   "type": "text",
+   "x": 60,
+   "y": 100,
+   "rotation": 0,
+   "index": "a003",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "grey",
+    "size": "m",
+    "font": "sans",
+    "textAlign": "start",
+    "w": 1500,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "An isolated money market on Mezo testnet. One contract holds lenders' MUSD and borrowers' MEZO."
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:s8L8tBp-2NFSS9kP68Ia0",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 60,
+   "y": 200,
+   "rotation": 0,
+   "index": "a004",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 300,
+    "h": 150,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "blue",
+    "fill": "semi",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Lenders"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "hold MUSD, want yield"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:eJT0llgrhUilzks8YOAH_",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 60,
+   "y": 430,
+   "rotation": 0,
+   "index": "a005",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 300,
+    "h": 150,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "green",
+    "fill": "semi",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Borrowers"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "hold MEZO, want dollars"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:0ChA6TX_WpPsDWmGcV0bo",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 60,
+   "y": 680,
+   "rotation": 0,
+   "index": "a006",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 300,
+    "h": 150,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "red",
+    "fill": "semi",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Liquidators"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "anyone with MUSD"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 640,
+   "y": 300,
+   "rotation": 0,
+   "index": "a007",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 460,
+    "h": 380,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "yellow",
+    "fill": "solid",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "MooringMarket"
+        }
+       ]
+      },
+      {
+       "type": "paragraph"
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "ERC-4626 vault: mMUSD shares"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "MEZO collateral per borrower"
+        }
+       ]
+      },
+      {
+       "type": "paragraph"
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Borrow up to 50% of MEZO value"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Liquidation past 65%, 8% bonus"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Rate 2% → 12% at 80% use → 112%"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:McfivKPVF4z5KEWj1_EB2",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 1260,
+   "y": 300,
+   "rotation": 0,
+   "index": "a008",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 320,
+    "h": 140,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "violet",
+    "fill": "semi",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "PoolTwapOracle"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "MEZO price in MUSD"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:zE8oXgEyPuzROJWmTZ41K",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 1260,
+   "y": 560,
+   "rotation": 0,
+   "index": "a009",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "ellipse",
+    "dash": "draw",
+    "url": "",
+    "w": 320,
+    "h": 140,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "violet",
+    "fill": "semi",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Mezo Pools"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "MEZO/MUSD pool"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "(Mezo's own DEX)"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:LHqlUdjnhB_h-jP-9pQdI",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00a",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "black",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 360,
+     "y": 252.5
+    },
+    "end": {
+     "x": 640,
+     "y": 345.6
+    },
+    "bend": -30,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "deposit MUSD"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:hD9euBh4m7br1Ys4OhTvT",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:LHqlUdjnhB_h-jP-9pQdI",
+   "toId": "shape:s8L8tBp-2NFSS9kP68Ia0",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.35
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:kK1mwbcoDhnhW8D7bR1JT",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:LHqlUdjnhB_h-jP-9pQdI",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.12
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:NE8UyHBcbBVakIfNQHmpv",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00b",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "blue",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 640,
+     "y": 406.4
+    },
+    "end": {
+     "x": 360,
+     "y": 312.5
+    },
+    "bend": -30,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "mMUSD + interest"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:Bn9s1CVpGmRR5kxKJ0vBe",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:NE8UyHBcbBVakIfNQHmpv",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.28
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:MwLGwg8NK5aIymDtFOfcy",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:NE8UyHBcbBVakIfNQHmpv",
+   "toId": "shape:s8L8tBp-2NFSS9kP68Ia0",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.75
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:YpSC3WgnZ06sQpTyjEaIz",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00c",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "black",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 360,
+     "y": 475
+    },
+    "end": {
+     "x": 640,
+     "y": 471
+    },
+    "bend": -20,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "post MEZO, repay MUSD"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:AVBZD-YSPEb4AtKS-9Vbb",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:YpSC3WgnZ06sQpTyjEaIz",
+   "toId": "shape:eJT0llgrhUilzks8YOAH_",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.3
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:v5tDJlyJht-6PMbupWzaC",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:YpSC3WgnZ06sQpTyjEaIz",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.45
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:NpLPO3vgQQzf6HcJpZguS",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00d",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "green",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 640,
+     "y": 528
+    },
+    "end": {
+     "x": 360,
+     "y": 542.5
+    },
+    "bend": -20,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "borrow MUSD"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:wp4NfM25WLjr238ZHfnlE",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:NpLPO3vgQQzf6HcJpZguS",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.6
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:GjXgmQXI6Mcqk1WqhEqN-",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:NpLPO3vgQQzf6HcJpZguS",
+   "toId": "shape:eJT0llgrhUilzks8YOAH_",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.75
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:hbtomuquUyucn-euHOyL-",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00e",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "black",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 360,
+     "y": 725
+    },
+    "end": {
+     "x": 640,
+     "y": 611.5999999999999
+    },
+    "bend": -20,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "repay up to half a risky loan"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:a-SI5SMz6mw28c60chrkC",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:hbtomuquUyucn-euHOyL-",
+   "toId": "shape:0ChA6TX_WpPsDWmGcV0bo",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.3
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:pHU0LzVevpJvJegG9DPOr",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:hbtomuquUyucn-euHOyL-",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.82
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:cKmpaC9QUzkO1ni-LBtr6",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00f",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "red",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 732,
+     "y": 680
+    },
+    "end": {
+     "x": 360,
+     "y": 800
+    },
+    "bend": -30,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "MEZO + 8%"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:KZk-t4hoMuCJCOvhAdOK-",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:cKmpaC9QUzkO1ni-LBtr6",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 0.2,
+     "y": 1
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:_VrXZswm7gYcAn37Lj5Tg",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:cKmpaC9QUzkO1ni-LBtr6",
+   "toId": "shape:0ChA6TX_WpPsDWmGcV0bo",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.8
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:jbjUggO0-oYZZLrQCZioB",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00g",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "violet",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 1100,
+     "y": 376
+    },
+    "end": {
+     "x": 1260,
+     "y": 370
+    },
+    "bend": 0,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "price()"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:WmVyj3FZVy-fXhcrVb2b9",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:jbjUggO0-oYZZLrQCZioB",
+   "toId": "shape:4bgK5oEr-lDV4vToGbUDj",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 1,
+     "y": 0.2
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:vCyw6rOp2rk8NQH88m4rK",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:jbjUggO0-oYZZLrQCZioB",
+   "toId": "shape:McfivKPVF4z5KEWj1_EB2",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 0,
+     "y": 0.5
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:MLtKON2j0bOuN1fQv9DM7",
+   "typeName": "shape",
+   "type": "arrow",
+   "x": 0,
+   "y": 0,
+   "rotation": 0,
+   "index": "a00h",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "kind": "arc",
+    "labelColor": "black",
+    "color": "violet",
+    "fill": "none",
+    "dash": "draw",
+    "size": "m",
+    "arrowheadStart": "none",
+    "arrowheadEnd": "arrow",
+    "font": "sans",
+    "start": {
+     "x": 1420,
+     "y": 440
+    },
+    "end": {
+     "x": 1420,
+     "y": 560
+    },
+    "bend": 0,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "2-hour average price"
+        }
+       ]
+      }
+     ]
+    },
+    "labelPosition": 0.5,
+    "scale": 1,
+    "elbowMidPoint": 0.5
+   }
+  },
+  {
+   "id": "binding:beM9WLmGLYReyzAoRSpDR",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:MLtKON2j0bOuN1fQv9DM7",
+   "toId": "shape:McfivKPVF4z5KEWj1_EB2",
+   "meta": {},
+   "props": {
+    "terminal": "start",
+    "normalizedAnchor": {
+     "x": 0.5,
+     "y": 1
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "binding:x9AuWf5OAAVhZGjyvB1CY",
+   "typeName": "binding",
+   "type": "arrow",
+   "fromId": "shape:MLtKON2j0bOuN1fQv9DM7",
+   "toId": "shape:zE8oXgEyPuzROJWmTZ41K",
+   "meta": {},
+   "props": {
+    "terminal": "end",
+    "normalizedAnchor": {
+     "x": 0.5,
+     "y": 0
+    },
+    "isExact": false,
+    "isPrecise": true,
+    "snap": "none"
+   }
+  },
+  {
+   "id": "shape:QyA-MUWmO7YDu6D1NDNkc",
+   "typeName": "shape",
+   "type": "text",
+   "x": 640,
+   "y": 720,
+   "rotation": 0,
+   "index": "a00i",
+   "parentId": "shape:Gg-lhLQWVw9ojpNoQ5A76",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "grey",
+    "size": "s",
+    "font": "sans",
+    "textAlign": "middle",
+    "w": 460,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Owner can only swap the price source."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "No pause, no upgrade, no access to funds."
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "typeName": "shape",
+   "type": "frame",
+   "x": 0,
+   "y": 1080,
+   "rotation": 0,
+   "index": "a00j",
+   "parentId": "page:mooring",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "w": 1640,
+    "h": 560,
+    "name": "2. When does a loan get liquidated?",
+    "color": "black"
+   }
+  },
+  {
+   "id": "shape:5QmePXiFQ8obmEPK97vcB",
+   "typeName": "shape",
+   "type": "text",
+   "x": 60,
+   "y": 40,
+   "rotation": 0,
+   "index": "a00k",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "black",
+    "size": "l",
+    "font": "sans",
+    "textAlign": "start",
+    "w": 1500,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Loan-to-value = debt ÷ value of the MEZO behind it"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:XG2cYNBHJhMNvxKaunPZL",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 120,
+   "y": 220,
+   "rotation": 0,
+   "index": "a00l",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 700,
+    "h": 110,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "green",
+    "fill": "solid",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Room to borrow"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "0% to 50%"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:WbXyb-C0QqfLPqzeL0mUT",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 820,
+   "y": 220,
+   "rotation": 0,
+   "index": "a00m",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 210,
+    "h": 110,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "yellow",
+    "fill": "solid",
+    "size": "s",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Can't borrow more"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "50% to 65%"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:t6tCOz4BCOwKFlLpRSqiJ",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 1030,
+   "y": 220,
+   "rotation": 0,
+   "index": "a00n",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 489.99999999999994,
+    "h": 110,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "red",
+    "fill": "pattern",
+    "size": "m",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Anyone can liquidate"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "above 65%"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:J9Hi-W0uyNRejYkogaZct",
+   "typeName": "shape",
+   "type": "geo",
+   "x": 380,
+   "y": 110,
+   "rotation": 0,
+   "index": "a00o",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "geo": "rectangle",
+    "dash": "draw",
+    "url": "",
+    "w": 180,
+    "h": 70,
+    "growY": 0,
+    "scale": 1,
+    "flipX": false,
+    "flipY": false,
+    "labelColor": "black",
+    "color": "black",
+    "fill": "none",
+    "size": "s",
+    "font": "sans",
+    "align": "middle",
+    "verticalAlign": "middle",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Demo loan ≈ 25%"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "shape:GgyUg7d7L8UolfCVx8_gG",
+   "typeName": "shape",
+   "type": "text",
+   "x": 120,
+   "y": 360,
+   "rotation": 0,
+   "index": "a00p",
+   "parentId": "shape:4AS6Homy9NaoDMUS8nZX-",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "grey",
+    "size": "m",
+    "font": "sans",
+    "textAlign": "start",
+    "w": 1400,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "If MEZO's price falls, the same debt becomes a bigger share of the collateral and the loan slides right."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "A liquidator repays up to half and takes that much MEZO plus 8%, which pulls the loan back into the safe zone."
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "typeName": "shape",
+   "type": "frame",
+   "x": 0,
+   "y": 1740,
+   "rotation": 0,
+   "index": "a00q",
+   "parentId": "page:mooring",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "w": 1640,
+    "h": 560,
+    "name": "3. Wave 2: from testnet market to mainnet protocol",
+    "color": "black"
+   }
+  },
+  {
+   "id": "shape:ZCyKcISiTK6u1DoPnLK1w",
+   "typeName": "shape",
+   "type": "text",
+   "x": 60,
+   "y": 40,
+   "rotation": 0,
+   "index": "a00r",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "black",
+    "size": "l",
+    "font": "sans",
+    "textAlign": "start",
+    "w": 1500,
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Nov 2 – Nov 15"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "autoSize": false
+   }
+  },
+  {
+   "id": "shape:pz0TbEtFbcZ5C7vvA0Klj",
+   "typeName": "shape",
+   "type": "note",
+   "x": 60,
+   "y": 160,
+   "rotation": 0,
+   "index": "a00s",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "yellow",
+    "labelColor": "black",
+    "size": "s",
+    "font": "sans",
+    "fontSizeAdjustment": 0,
+    "align": "start",
+    "verticalAlign": "start",
+    "growY": 0,
+    "url": "",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Mainnet launch, capped"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Pyth MEZO/USD price, checked against the Mezo Pools average"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "textLastEditedBy": null
+   }
+  },
+  {
+   "id": "shape:LSq344K20a-XB_FIuNprG",
+   "typeName": "shape",
+   "type": "note",
+   "x": 370,
+   "y": 160,
+   "rotation": 0,
+   "index": "a00t",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "light-green",
+    "labelColor": "black",
+    "size": "s",
+    "font": "sans",
+    "fontSizeAdjustment": 0,
+    "align": "start",
+    "verticalAlign": "start",
+    "growY": 0,
+    "url": "",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Market factory"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "isolated sMUSD and veMEZO markets next to MEZO"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "textLastEditedBy": null
+   }
+  },
+  {
+   "id": "shape:1F4etcj1KYIpMiohQtnoG",
+   "typeName": "shape",
+   "type": "note",
+   "x": 680,
+   "y": 160,
+   "rotation": 0,
+   "index": "a00u",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "light-red",
+    "labelColor": "black",
+    "size": "s",
+    "font": "sans",
+    "fontSizeAdjustment": 0,
+    "align": "start",
+    "verticalAlign": "start",
+    "growY": 0,
+    "url": "",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Safety"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "reserve fund from interest, invariant fuzz tests, timelocked parameters"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "textLastEditedBy": null
+   }
+  },
+  {
+   "id": "shape:rSi5oHYm6QWZ9FktSmnNF",
+   "typeName": "shape",
+   "type": "note",
+   "x": 990,
+   "y": 160,
+   "rotation": 0,
+   "index": "a00v",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "light-blue",
+    "labelColor": "black",
+    "size": "s",
+    "font": "sans",
+    "fontSizeAdjustment": 0,
+    "align": "start",
+    "verticalAlign": "start",
+    "growY": 0,
+    "url": "",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Liquidation keeper"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "open-source bot plus Telegram alerts before a loan reaches 65%"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "textLastEditedBy": null
+   }
+  },
+  {
+   "id": "shape:XvdJLKW3z6O0RD1YnsSI_",
+   "typeName": "shape",
+   "type": "note",
+   "x": 1300,
+   "y": 160,
+   "rotation": 0,
+   "index": "a00w",
+   "parentId": "shape:LC75FKxkAzi8pw_uKb1TG",
+   "isLocked": false,
+   "opacity": 1,
+   "meta": {},
+   "props": {
+    "color": "light-violet",
+    "labelColor": "black",
+    "size": "s",
+    "font": "sans",
+    "fontSizeAdjustment": 0,
+    "align": "start",
+    "verticalAlign": "start",
+    "growY": 0,
+    "url": "",
+    "richText": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "Lender rewards"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "type": "text",
+         "text": "mMUSD/MUSD pool with a Mezo Earn gauge, so lenders can earn MEZO emissions"
+        }
+       ]
+      }
+     ]
+    },
+    "scale": 1,
+    "textLastEditedBy": null
+   }
+  }
+ ]
+}

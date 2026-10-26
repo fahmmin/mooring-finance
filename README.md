@@ -91,6 +91,4 @@ On Windows, `node build-cache.mjs` builds Synpress's MetaMask cache (Synpress's 
 
 ## Roadmap
 
-1. **Nov, Wave 2:** mainnet with a deposit cap; Pyth MEZO/USD bounded by the pool TWAP; a reserve factor for bad debt.
-2. **Nov:** more isolated markets (veMEZO, sMUSD as collateral); integrations with MUSD yield vaults as lenders.
-3. **Dec:** open-source liquidation bot with Telegram alerts for borrowers.
+Wave 2 (Nov 2–15): capped mainnet launch with a Pyth price, a market factory with an sMUSD market, a reserve fund with invariant tests, a liquidation keeper with Telegram alerts, and lender rewards through a Mezo Earn gauge. Details in [docs/demo-video.md](docs/demo-video.md#wave-2-milestones-nov-2--nov-15).
